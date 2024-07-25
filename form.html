@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Form</title>
+    <link rel="stylesheet" href="css/formstyle.css">
+</head>
+<body>
+    <header>
+        <h1 class="main-title">Edison Phonograph Purchase Form</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="corporate.html">Corporate</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="purchase-form">
+            <h2>Purchase Your Edison Phonograph</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
+                
+                <label for="model">Select Model:</label>
+                <select id="model" name="model">
+                    <option value="phonograph_1">Edison Phonograph Model 1</option>
+                    <option value="phonograph_2">Edison Phonograph Model 2</option>
+                    <option value="phonograph_3">Edison Phonograph Model 3</option>
+                    <option value="phonograph_4">Edison Phonograph Model 4</option>
+                    <option value="phonograph_5">Edison Phonograph Model 5</option>
+                    <option value="phonograph_6">Edison Phonograph Model 6</option>
+                </select>
+                
+                <button type="submit">Submit Order</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Edison Phonograph Inc. All rights reserved.</p>
+    </footer>
+</body>
+</html>
