@@ -1,5 +1,3 @@
-/* indexstyle.css */
-
 body {
     font-family: 'Georgia', serif;
     line-height: 1.6;
@@ -95,7 +93,19 @@ main {
     border-radius: 10px;
 }
 
-.buy-button {
+.price-tag {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.buy-button,
+.buy-button-link {
     position: absolute;
     bottom: 10px;
     left: 50%;
@@ -109,7 +119,8 @@ main {
     transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.buy-button:hover {
+.buy-button:hover,
+.buy-button-link:hover {
     background-color: #e55c00;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
@@ -142,16 +153,8 @@ footer {
     transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* .social-media a:hover {
-    color: white;
-    transform: scale(1.2);
-} */
 .social-media a:hover {
     color: #ff6600;
     background-color: #fff;
     border-radius: 5px;
 }
-
-
-
-
